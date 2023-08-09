@@ -2,15 +2,16 @@
 #include "MatrixUpperTriangular.h"
 #include <iostream>
 
-int main() {
+int main()
+{
 
-   pmat::MatrixUpperTriangular B{3};
+    pmat::MatrixUpperTriangular B{3};
 
-   pmat::MatrixSquare C{3};
+    pmat::MatrixSquare C{3};
 
-   pmat::MatrixSquare R{B * C};
+    pmat::MatrixSquare R{B * C};
 
-   std::cout << "Fim\n";
+    std::cout << "End of development specific test.\n";
 
-   return 0;
+    return 0;
 }
