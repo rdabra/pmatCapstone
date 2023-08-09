@@ -74,4 +74,5 @@ In order to enable the evaluation of the library, unit gtests were developed and
 1. Clone this repo.
 2. Make a build directory in the top level directory: `mkdir build && cd build`
 3. Compile: `cmake .. && make`
-4. Run it: `/test/pmat_test.exe`.
+4. Library is here: `/src/libpmatLib.a`
+5. Run the tests: `/test/pmat_test.exe`.
