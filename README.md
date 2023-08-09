@@ -6,33 +6,37 @@ This effort is also the Capstone Project (Option One) submitted by the author to
 
 ## Rubric Points Implemented
 
-| RUBRIC | POINT | EXAMPLE FILE | LINE NUMBER(S) |
-| ------ | ----- | ---- | -------------- |
-| Loops, Functions, I/O | The project demonstrates an understanding of C++ functions and control structures. | DecompositionPLU.cpp | 32-60 |
-| Loops, Functions, I/O | The project reads data from a file and process the data, or the program writes data to a file. | Matrix.cpp | 50-70 |
-| Object Oriented Programming | The project uses Object Oriented Programming techniques. | Matrix.h | 1-304 |
-| Object Oriented Programming | Classes use appropriate access specifiers for class members. | Matrix.h | 1-304 |
-| Object Oriented Programming | Class constructors utilize member initialization lists. | Matrix.h | 31-33 |
-| Object Oriented Programming | Classes abstract implementation details from their interfaces. | DecompositionPLU.h | 104-113 |
-| Object Oriented Programming | Classes abstract implementation details from their interfaces. | DecompositionPQR.h | 1-81 |
-| Object Oriented Programming | Classes follow an appropriate inheritance hierarchy. | MatrixTriangular.h | 12,29,31 |
-| Object Oriented Programming | Overloaded functions allow the same function to operate on different parameters. | Matrix.h | 212,222 |
-| Object Oriented Programming | Derived class functions override virtual base class functions. | Array.h, Matrix.h | 28(Array),38(Matrix) |
-| Memory Management | The project makes use of references in function declarations. | Matrix.h | 58 |
-| Memory Management | The project follows the Rule of 5. | MatrixUpperTriangular.h | 16-23 |
-| Memory Management | The project uses move semantics to move data, instead of copying it, where possible. | MatrixSquare.cpp | 11 |
-| Memory Management | The project uses smart pointers instead of raw pointers. | TMultiplicationManager.h | 21 |
-| Concurrency | The project uses multithreading. | TMultiplicationManager.cpp | 42 |
-| Concurrency | A promise and future is used in the project. | TMultiplicationManager.cpp | 39 |
-| Concurrency | A mutex or lock is used in the project. | TMultiplicationManager.cpp | 18,23 |
+| RUBRIC                      | POINT                                                                                          | EXAMPLE FILE               | LINE NUMBER(S)       |
+| --------------------------- | ---------------------------------------------------------------------------------------------- | -------------------------- | -------------------- |
+| Loops, Functions, I/O       | The project demonstrates an understanding of C++ functions and control structures.             | DecompositionPLU.cpp       | 32-60                |
+| Loops, Functions, I/O       | The project reads data from a file and process the data, or the program writes data to a file. | Matrix.cpp                 | 50-70                |
+| Object Oriented Programming | The project uses Object Oriented Programming techniques.                                       | Matrix.h                   | 1-304                |
+| Object Oriented Programming | Classes use appropriate access specifiers for class members.                                   | Matrix.h                   | 1-304                |
+| Object Oriented Programming | Class constructors utilize member initialization lists.                                        | Matrix.h                   | 31-33                |
+| Object Oriented Programming | Classes abstract implementation details from their interfaces.                                 | DecompositionPLU.h         | 104-113              |
+| Object Oriented Programming | Classes abstract implementation details from their interfaces.                                 | DecompositionPQR.h         | 1-81                 |
+| Object Oriented Programming | Classes follow an appropriate inheritance hierarchy.                                           | MatrixTriangular.h         | 12,29,31             |
+| Object Oriented Programming | Overloaded functions allow the same function to operate on different parameters.               | Matrix.h                   | 212,222              |
+| Object Oriented Programming | Derived class functions override virtual base class functions.                                 | Array.h, Matrix.h          | 28(Array),38(Matrix) |
+| Memory Management           | The project makes use of references in function declarations.                                  | Matrix.h                   | 58                   |
+| Memory Management           | The project follows the Rule of 5.                                                             | MatrixUpperTriangular.h    | 16-23                |
+| Memory Management           | The project uses move semantics to move data, instead of copying it, where possible.           | MatrixSquare.cpp           | 11                   |
+| Memory Management           | The project uses smart pointers instead of raw pointers.                                       | TMultiplicationManager.h   | 21                   |
+| Concurrency                 | The project uses multithreading.                                                               | TMultiplicationManager.cpp | 42                   |
+| Concurrency                 | A promise and future is used in the project.                                                   | TMultiplicationManager.cpp | 39                   |
+| Concurrency                 | A mutex or lock is used in the project.                                                        | TMultiplicationManager.cpp | 18,23                |
 
 ## Documentation
 
-The documentation was generated by [doxygen](https://www.doxygen.nl/) outputted to [html](BLABLA) and [pdf](BLABLA). In the html version, [MathJax](https://www.mathjax.org/) was used to draw the [Latex](https://www.latex-project.org/) commands. Additionally to the usual description of data, functions and classes, the generated documentation also presents class diagrams.
+The content of documentation directory was generated by [doxygen](https://www.doxygen.nl/) outputted to html and pdf. In the html version, [MathJax](https://www.mathjax.org/) was used to draw the [Latex](https://www.latex-project.org/) commands. Additionally to the usual description of data, functions and classes, the generated documentation also presents class diagrams such as the following, in which the hierarchy of matrix classes is shown.
+
+<p align="center">
+  <img src="image/README/1691602063656.png">
+</p>
 
 ## Development
 
-The library was developed in Windows 10 using the following gear.
+The library pmat was developed in Windows 10 using the following gear.
 
 * Editor: [vscode](https://code.visualstudio.com/) 1.81.0
 * Compiler: [Clang](https://clang.llvm.org/) 16.0.5
@@ -42,7 +46,7 @@ The library was developed in Windows 10 using the following gear.
 * Test library: [gtest](https://github.com/google/googletest/archive/refs/tags/v1.13.0.zip) 1.13.0 (downloaded automatically by cmake)
 * Package manager: [msys2](https://www.msys2.org/)
 
-The source code also compiled successfully in Linux and Windows environments by using cmake, make and gcc 13.2.0 as described in the next section.
+The source code also compiled successfully in Linux and Windows environments by using cmake, make and gcc as described in the next section. For old versions of gcc (around 5.4), "-Wno-attributes" should be used.
 
 ## Dependencies for Running Locally
 
@@ -59,12 +63,15 @@ The source code also compiled successfully in Linux and Windows environments by 
 
 ## Test coverage
 
-In order to enable the evaluation of the library, unit gtests were developed and their coverage were verified by  [gcovr](https://gcovr.com/en/stable/) outputted to [html](blablabla).
+In order to enable the evaluation of the library, unit gtests were developed and their coverage were verified by  [gcovr](https://gcovr.com/en/stable/) outputted to html in the coverage directory.
+
+<p align="center">
+  <img src="image/README/1691603447304.png">
+</p>
 
 ## Basic Build Instructions
 
 1. Clone this repo.
 2. Make a build directory in the top level directory: `mkdir build && cd build`
 3. Compile: `cmake .. && make`
-4. Library: `/src/libpmatLib.a`
-5. Running the tests: `/test/pmat_test.exe`.
+4. Run it: `/test/pmat_test.exe`.
